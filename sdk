@@ -4,7 +4,7 @@
     <localimport file="minimal"/>
     <localimport file="buildtools"/>
     <import remote="https://fuchsia.googlesource.com/zircon"
-            manifest="manifest"
+            manifest="manifest/zircon"
             name="zircon"/>
   </imports>
   <projects>

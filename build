@@ -2,27 +2,25 @@
 <manifest>
   <imports>
     <localimport file="minimal"/>
-    <localimport file="buildtools"/>
     <localimport file="gzos"/>
     <localimport file="qemu"/>
+    <import remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/build"
+            remotebranch="gzos"
+            manifest="manifest/build"
+            name="build"/>
+    <import remote="https://fuchsia.googlesource.com/buildtools"
+            manifest="manifest/buildtools"
+            name="buildtools"/>
+    <import remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/scripts"
+            remotebranch="gzos"
+            manifest="manifest/scripts"
+            name="scripts"/>
   </imports>
   <projects>
-    <project name="build"
-             path="build"
-             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/build"
-             remotebranch="gzos"
-             gerrithost="https://review.gerrithub.io"
-             githooks="manifest/git-hooks"/>
     <project name="docs"
              path="docs"
              remote="https://fuchsia.googlesource.com/docs"
              gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
-    <project name="scripts"
-             path="scripts"
-             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/scripts"
-             remotebranch="gzos"
-             gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"/>
 
     <!-- Third-party -->
@@ -42,12 +40,4 @@
              gerrithost="https://fuchsia-review.googlesource.com"
              githooks="manifest/git-hooks"/>
   </projects>
-  <hooks>
-    <hook name="install-fx"
-          project="scripts"
-          action="devshell/lib/add_symlink_to_bin.sh"/>
-    <hook name="download-linaro-toolchain"
-          project="scripts"
-          action="devshell/download-linaro-toolchain"/>
-  </hooks>
 </manifest>
