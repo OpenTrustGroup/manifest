@@ -4,15 +4,17 @@
     <localimport file="minimal"/>
   </imports>
   <projects>
+    <project name="infra/infra"
+             path="infra/go/src/fuchsia.googlesource.com/infra/infra"
+             remote="https://fuchsia.googlesource.com/infra/infra"
+             gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="infra/config"
              path="infra/config"
              remote="https://fuchsia.googlesource.com/infra/config"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="infra/recipes"
              path="infra/recipes"
              remote="https://fuchsia.googlesource.com/infra/recipes"
-             gerrithost="https://fuchsia-review.googlesource.com"
-             githooks="manifest/git-hooks"/>
+             gerrithost="https://fuchsia-review.googlesource.com"/>
   </projects>
 </manifest>
