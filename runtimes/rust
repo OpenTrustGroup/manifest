@@ -2,6 +2,9 @@
 <manifest>
   <imports>
     <localimport file="../minimal"/>
+    <import remote="https://fuchsia.googlesource.com/build"
+            manifest="manifest/build"
+            name="build"/>
   </imports>
   <projects>
     <project name="rust-crates"
