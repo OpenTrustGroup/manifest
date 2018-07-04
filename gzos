@@ -2,6 +2,7 @@
 <manifest>
   <imports>
     <localimport file="qemu"/>
+    <localimport file="tipc-test"/>
   </imports>
 
   <projects>
