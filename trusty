@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <imports>
-    <localimport file="build"/>
-    <localimport file="tipc-test"/>
+    <localimport file="gzos"/>
+    <import remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/build"
+            manifest="manifest/build"
+            name="build"
+            remotebranch="gzos"/>
+    <import remote="https://fuchsia.googlesource.com/buildtools"
+            manifest="manifest/buildtools"
+            name="buildtools"/>
+    <import remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/scripts"
+            manifest="manifest/scripts"
+            name="scripts"
+            remotebranch="gzos"/>
+    <import remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/manifest"
+            remotebranch="gzos"
+            manifest="gzos"
+            name="manifest"/>
   </imports>
   <projects>
     <!-- BEGIN trusty core projects -->
