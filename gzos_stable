@@ -1,16 +1,18 @@
 <manifest>
   <projects>
-    <project name="arm-trusted-firmware" path="arm-trusted-firmware" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/arm-trusted-firmware" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
-    <project name="build" path="build" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/build" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
+    <project name="arm-trusted-firmware" path="arm-trusted-firmware" remote="https://review.gerrithub.io/OpenTrustGroup/arm-trusted-firmware" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
+    <project name="build" path="build" remote="https://review.gerrithub.io/OpenTrustGroup/build" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
     <project name="buildtools" path="buildtools" remote="https://fuchsia.googlesource.com/buildtools" revision="957289c1db8ecc4a4f03d867f28f166c55f02e16" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="docs" path="docs" remote="https://fuchsia.googlesource.com/docs" revision="ddf38b991d725b1c22f6ce8ac0351c7787736d41" gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="garnet" path="garnet" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/garnet" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
+    <project name="garnet" path="garnet" remote="https://review.gerrithub.io/OpenTrustGroup/garnet" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
     <project name="glog" path="garnet/go/src/thinfs/vendor/github.com/golang/glog" remote="https://fuchsia.googlesource.com/third_party/golang/glog" revision="23def4e6c14b4da8ac2ed8007337bc5eb5007998"/>
     <project name="errors" path="garnet/go/src/thinfs/vendor/github.com/pkg/errors" remote="https://fuchsia.googlesource.com/third_party/pkg/errors" revision="839d9e913e063e28dfd0e6c7b7512793e0a48be9"/>
-    <project name="gen_rootfs" path="gen_rootfs" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/gen_rootfs" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
-    <project name="linux" path="linux" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/linux" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
-    <project name="manifest" path="manifest" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/manifest" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
-    <project name="scripts" path="scripts" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/scripts" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
+    <project name="gen_rootfs" path="gen_rootfs" remote="https://review.gerrithub.io/OpenTrustGroup/gen_rootfs" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
+    <!-- temporarily disable linux git due to git clone issue
+    <project name="linux" path="linux" remote="https://review.gerrithub.io/OpenTrustGroup/linux" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
+    -->
+    <project name="manifest" path="manifest" remote="https://review.gerrithub.io/OpenTrustGroup/manifest" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
+    <project name="scripts" path="scripts" remote="https://review.gerrithub.io/OpenTrustGroup/scripts" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
     <project name="third_party/android/platform/external/aac" path="third_party/android/platform/external/aac" remote="https://fuchsia.googlesource.com/third_party/android/platform/external/aac" revision="a3e0aa5f25908d92535e045bbde73c9a3d19adc7"/>
     <project name="third_party/android/platform/frameworks/av" path="third_party/android/platform/frameworks/av" remote="https://fuchsia.googlesource.com/third_party/android/platform/frameworks/av" revision="d31b6e37f0b04a19ce084ffd60cd1c210241d24b"/>
     <project name="third_party/android/platform/frameworks/native" path="third_party/android/platform/frameworks/native" remote="https://fuchsia.googlesource.com/third_party/android/platform/frameworks/native" revision="266790e13c68c0cf6b9ef7dde14034619ed74916"/>
@@ -71,7 +73,7 @@
     <project name="third_party/python/mock" path="third_party/python/mock" remote="https://fuchsia.googlesource.com/third_party/python/testing-cabal/mock" revision="8c19ef6c95004524cb9f0b170a1aff6f47ade764" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/pytoml" path="third_party/pytoml" remote="https://fuchsia.googlesource.com/third_party/pytoml" revision="8641351699f44401232786cd9f320ac373c3a02e" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/pyyaml" path="third_party/pyyaml" remote="https://fuchsia.googlesource.com/third_party/pyyaml" revision="7f118278ff09fc2deea32b429cffc38856bf6992" gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="third_party/qemu" path="third_party/qemu" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/third_party-qemu" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
+    <project name="third_party/qemu" path="third_party/qemu" remote="https://review.gerrithub.io/OpenTrustGroup/third_party-qemu" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
     <project name="qemu/third_party/dtc" path="third_party/qemu/dtc" remote="https://fuchsia.googlesource.com/third_party/dtc" revision="f88865469b65455bdc4ebe7ad8601fafea9b8ef3" gerrithost="https://fuchsia-review.googlesource.com" githooks="manifest/git-hooks"/>
     <project name="qemu/third_party/pixman" path="third_party/qemu/pixman" remote="https://fuchsia.googlesource.com/third_party/pixman" revision="12bde097bba0dc6b29ea4d945219fd1c93c5f82b" gerrithost="https://fuchsia-review.googlesource.com" githooks="manifest/git-hooks"/>
     <project name="qemu/third_party/sdl" path="third_party/qemu/sdl" remote="https://fuchsia.googlesource.com/third_party/sdl" revision="874eacff6d70f5b53f94cd0129ea558283ee55da" gerrithost="https://fuchsia-review.googlesource.com" githooks="manifest/git-hooks"/>
@@ -93,14 +95,14 @@
     <project name="third_party/soc_term" path="third_party/soc_term" remote="https://github.com/linaro-swg/soc_term" revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" githooks="manifest/git-hooks"/>
     <project name="third_party/spirv-cross" path="third_party/spirv-cross" remote="https://fuchsia.googlesource.com/third_party/spirv-cross" revision="3a8335eee078e3a5c06db8603c89f4f121ec5cfa" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/syzkaller" path="third_party/syzkaller" remote="https://fuchsia.googlesource.com/third_party/syzkaller" revision="f618e0a94bb6cb44b9dda3439af9da822a04c958" gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="third_party/tipc-test" path="third_party/tipc-test" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/third_party-tipc-test" revision="456b48aaa45c12332372361940c1a32a175b45a7" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
+    <project name="third_party/tipc-test" path="third_party/tipc-test" remote="https://review.gerrithub.io/OpenTrustGroup/third_party-tipc-test" revision="456b48aaa45c12332372361940c1a32a175b45a7" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
     <project name="third_party/vboot_reference" path="third_party/vboot_reference" remote="https://fuchsia.googlesource.com/third_party/vboot_reference" revision="57dd611f3cc47cc702627e912f4bb80d1c95d372" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/vim" path="third_party/vim" remote="https://fuchsia.googlesource.com/third_party/vim" revision="b8b799044d57296ae5ef12a16dd45419383241fb" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/vulkan-cts" path="third_party/vulkan-cts" remote="https://fuchsia.googlesource.com/third_party/vulkan-cts" revision="ffe9d5e815f7d87709062726cd14317054aa8ad0" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/vulkan_loader_and_validation_layers" path="third_party/vulkan_loader_and_validation_layers" remote="https://fuchsia.googlesource.com/third_party/vulkan_loader_and_validation_layers" revision="94f5691c800c55bab144d1bbf11847a4dab8d0ea" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/yasm" path="third_party/yasm" remote="https://fuchsia.googlesource.com/third_party/yasm" revision="edb428581932cfc87873aa44f4ff8b3a8c37bd09" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/zlib" path="third_party/zlib" remote="https://fuchsia.googlesource.com/third_party/zlib" revision="5a6d2ed866da7e104c6e79fc2f2a9d5e0738cb98" gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="zircon" path="zircon" remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/zircon" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
+    <project name="zircon" path="zircon" remote="https://review.gerrithub.io/OpenTrustGroup/zircon" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
   </projects>
   <hooks>
     <hook name="cipd-update" action="tools/cipd-update.sh" project="garnet"/>
