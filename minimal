@@ -2,7 +2,7 @@
 <manifest>
   <projects>
     <project name="manifest"
-             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/manifest"
+             remote="https://review.gerrithub.io/OpenTrustGroup/manifest"
              remotebranch="gzos"
              gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"

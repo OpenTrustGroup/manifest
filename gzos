@@ -8,19 +8,19 @@
   <projects>
     <project name="linux"
              path="linux"
-             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/linux"
+             remote="https://review.gerrithub.io/OpenTrustGroup/linux"
              remotebranch="gzos"
              gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"/>
     <project name="arm-trusted-firmware"
              path="arm-trusted-firmware"
-             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/arm-trusted-firmware"
+             remote="https://review.gerrithub.io/OpenTrustGroup/arm-trusted-firmware"
              remotebranch="gzos"
              gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"/>
     <project name="gen_rootfs"
              path="gen_rootfs"
-             remote="ssh://review.gerrithub.io:29418/OpenTrustGroup/gen_rootfs"
+             remote="https://review.gerrithub.io/OpenTrustGroup/gen_rootfs"
              remotebranch="gzos"
              gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"/>
