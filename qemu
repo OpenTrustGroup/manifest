@@ -7,7 +7,7 @@
     <project name="third_party/qemu"
              path="third_party/qemu"
              remote="https://review.gerrithub.io/OpenTrustGroup/third_party-qemu"
-             remotebranch="gzos"
+             remotebranch="gzos_dev"
              gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"/>
     <project name="qemu/third_party/dtc"

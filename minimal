@@ -3,7 +3,7 @@
   <projects>
     <project name="manifest"
              remote="https://review.gerrithub.io/OpenTrustGroup/manifest"
-             remotebranch="gzos"
+             remotebranch="gzos_dev"
              gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"
              path="manifest"/>
