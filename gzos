@@ -14,6 +14,12 @@
              gerrithost="https://review.gerrithub.io"
              githooks="manifest/git-hooks"/>
     -->
+    <project name="u-boot"
+             path="u-boot"
+             remote="https://review.gerrithub.io/OpenTrustGroup/u-boot"
+             remotebranch="gzos_dev"
+             gerrithost="https://review.gerrithub.io"
+             githooks="manifest/git-hooks"/>
     <project name="arm-trusted-firmware"
              path="arm-trusted-firmware"
              remote="https://review.gerrithub.io/OpenTrustGroup/arm-trusted-firmware"
