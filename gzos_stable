@@ -3,7 +3,7 @@
     <project name="arm-trusted-firmware" path="arm-trusted-firmware" remote="https://review.gerrithub.io/OpenTrustGroup/arm-trusted-firmware" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
     <project name="build" path="build" remote="https://review.gerrithub.io/OpenTrustGroup/build" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
     <project name="buildtools" path="buildtools" remote="https://fuchsia.googlesource.com/buildtools" revision="68a8233dc35d61d39dd415cf1d6a49f838caf0c2" gerrithost="https://fuchsia-review.googlesource.com"/>
-    <project name="docs" path="docs" remote="https://fuchsia.googlesource.com/docs" revision="9c96c5be8a91f8c755c65e08854b8433cc563a21" gerrithost="https://fuchsia-review.googlesource.com"/>
+    <project name="docs" path="docs" remote="https://fuchsia.googlesource.com/docs" revision="8c0756b1cd79c7808da4c3721d1e37270e2daedb" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="garnet" path="garnet" remote="https://review.gerrithub.io/OpenTrustGroup/garnet" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
     <project name="gen_rootfs" path="gen_rootfs" remote="https://review.gerrithub.io/OpenTrustGroup/gen_rootfs" remotebranch="gzos" revision="d99720ee7d19a3f91946f71bae50ecf3c9bed309" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
     <project name="manifest" path="manifest" remote="https://review.gerrithub.io/OpenTrustGroup/manifest" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
@@ -98,6 +98,7 @@
     <project name="third_party/wayland" path="third_party/wayland" remote="https://fuchsia.googlesource.com/third_party/wayland" revision="01095a9ce4d8457ee2f221848b9805c4b5cffc95" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/yasm" path="third_party/yasm" remote="https://fuchsia.googlesource.com/third_party/yasm" revision="edb428581932cfc87873aa44f4ff8b3a8c37bd09" gerrithost="https://fuchsia-review.googlesource.com"/>
     <project name="third_party/zlib" path="third_party/zlib" remote="https://fuchsia.googlesource.com/third_party/zlib" revision="5a6d2ed866da7e104c6e79fc2f2a9d5e0738cb98" gerrithost="https://fuchsia-review.googlesource.com"/>
+    <project name="u-boot" path="u-boot" remote="https://review.gerrithub.io/OpenTrustGroup/u-boot" remotebranch="gzos" gerrithost="https://review.gerrithub.io" githooks="manifest/git-hooks"/>
     <project name="zircon" path="zircon" remote="https://review.gerrithub.io/OpenTrustGroup/zircon" remotebranch="gzos" gerrithost="https://review.gerrithub.io"/>
   </projects>
   <hooks>
